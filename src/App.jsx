@@ -5,10 +5,10 @@ import Home from './components/dashboard/home/Home'
 import NotFound from './components/notFound/NotFound'
 import ProtectedRoutes from './routes/ProtectedRoutes'
 import User from '@components/dashboard/user/User'
-  
+
 import Loan from '@components/dashboard/loan/Loan'
 import Material from '@components/dashboard/material/Material'
- 
+
 
 function App() {
   return (
@@ -17,12 +17,12 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='*' element={<NotFound />} />
-      //RUTAS PROTEGIDAS
+        {/* rutas protegidas */}
         <Route element={<ProtectedRoutes />}>
           <Route path='/home' element={<Home />} />
-          <Route path='/users' element={<User/>}/>
-          <Route path='/materials' element={<Material/>} />
-          <Route path='/loans' element={<Loan/>} />
+          <Route path='/users' element={<User />} />
+          <Route path='/materials' element={<Material />} />
+          <Route path='/loans' element={<Loan />} />
 
         </Route>
       </Routes>
