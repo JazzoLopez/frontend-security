@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { login } from '../../../services/authservice'
+import { login } from '../../../services/authService'
 import { Button } from '@mui/material'
 import SendIcon from '@mui/icons-material/Send'
 import './styles.css'
